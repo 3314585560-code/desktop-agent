@@ -1,0 +1,13 @@
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+dist/
+build/
+/release/
+
+/demo_files/
+
+/test_image.png

@@ -1,0 +1,77 @@
+{
+  "catalog_tokens": 75,
+  "full_tokens": 1118,
+  "disclosure_ratio": 14.9067,
+  "trials": [
+    {
+      "prompt": "审查代码改动",
+      "expected": "review-diff",
+      "actual": "review-diff",
+      "loaded_bodies": [
+        "review-diff"
+      ],
+      "passed": true
+    },
+    {
+      "prompt": "检查 Git 差异：只看 README.md",
+      "expected": "review-diff",
+      "actual": "review-diff",
+      "loaded_bodies": [
+        "review-diff"
+      ],
+      "passed": true
+    },
+    {
+      "prompt": "检查 CSV 数据：weekly sales.csv",
+      "expected": "csv-profile",
+      "actual": "csv-profile",
+      "loaded_bodies": [
+        "csv-profile"
+      ],
+      "passed": true
+    },
+    {
+      "prompt": "统计 CSV 缺失值：samples/report.csv",
+      "expected": "csv-profile",
+      "actual": "csv-profile",
+      "loaded_bodies": [
+        "csv-profile"
+      ],
+      "passed": true
+    },
+    {
+      "prompt": "生成项目检查清单：Mini Cursor",
+      "expected": "project-checklist",
+      "actual": "project-checklist",
+      "loaded_bodies": [
+        "project-checklist"
+      ],
+      "passed": true
+    },
+    {
+      "prompt": "请解释什么是 CSV，不要检查 CSV 数据",
+      "expected": null,
+      "actual": null,
+      "loaded_bodies": [],
+      "passed": true
+    }
+  ],
+  "false_triggers": 0,
+  "disabled_trial": {
+    "prompt": "审查代码改动",
+    "expected": null,
+    "actual": null,
+    "loaded_bodies": [],
+    "passed": true
+  },
+  "skill_names": [
+    "csv-profile",
+    "project-checklist",
+    "review-diff"
+  ],
+  "tokenizer": {
+    "source": "DeepSeek 官方 V4 离线分词器",
+    "sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614"
+  },
+  "measurement": "计数范围为技能目录及正文，触发试验运行实际 Agent 路径并使用离线模型替身。"
+}
